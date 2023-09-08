@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <script defer src="./main.js" type="module"></script>
 </head>
 
 <body>
@@ -32,8 +33,8 @@
     <img src="./assets/team-logos/toluca.png">
   </section>
 
-  <section class="d-flex matches-section">
-    <div class="d-flex flex-column justify-content-center align-items-center p-2" style="width: 6rem;">
+  <section class="container d-flex flex-column flex-sm-row matches-section p-0">
+    <div class="matches-section__form d-flex flex-column justify-content-center align-items-center p-2">
       Resultados:
       <select class="form-select form-select-sm">
         <option class="fw-bold">Todos</option>
@@ -50,7 +51,7 @@
       </select>
     </div>
     <div class="custom-carousel">
-      <button class="custom-carousel__left-btn custom-carousel__controls">
+      <button class="custom-carousel__left-btn custom-carousel__controls d-none">
         <svg role="img" aria-hidden="true" focusable="false" class="custom-carousel__left-arrow-svg"
           xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
           <path fill-rule="evenodd" d="M0 8.946L3.91 5 0 1.054 1.045 0 6 5l-4.955 5z"></path>
@@ -69,76 +70,192 @@
           <path fill-rule="evenodd" d="M0 8.946L3.91 5 0 1.054 1.045 0 6 5l-4.955 5z"></path>
         </svg>
       </button>
-      <div class="custom-carousel__section d-flex">
-        <header class="custom-carousel__section-title">Liga de expansión MX</header>
-        <div class="custom-carousel__list d-flex">
-          <div class="custom-carousel__list-item d-flex">
-            <div class="custom-carousel__item">
-              <div class="custom-carousel__start-time text-center">17:05</div>
-              <div class="custom-carousel__teams-container">
-                <div class="custom-carousel__team-item">
-                  <img src="./assets/team-logos/toluca.png">
-                  <span class="custom-carousel__team-name"><a href="#">Alebrijes de Oaxaca</a></span>
-                  <span class="custom-carousel__team-result" style="border-radius: 0.125rem 0.125rem 0 0;">-</span>
+      <div class="d-flex">
+        <div class="custom-carousel__section d-flex">
+          <header class="custom-carousel__section-title">Liga de expansión MX</header>
+          <div class="custom-carousel__list d-flex">
+            <div class="custom-carousel__list-item d-flex">
+              <div class="custom-carousel__item">
+                <div class="custom-carousel__start-time text-center">17:05</div>
+                <div class="custom-carousel__teams-container">
+                  <div class="custom-carousel__team-item">
+                    <img src="./assets/team-logos/toluca.png">
+                    <span class="custom-carousel__team-name"><a href="#">Alebrijes de Oaxaca</a></span>
+                    <span class="custom-carousel__team-result" style="border-radius: 0.125rem 0.125rem 0 0;">-</span>
+                  </div>
+                  <div class="custom-carousel__team-item">
+                    <img src="./assets/team-logos/guadalajara.png">
+                    <span class="custom-carousel__team-name"><a href="#">Venados</a></span>
+                    <span class="custom-carousel__team-result" style="border-radius: 0 0 0.125rem 0.125rem;">-</span>
+                  </div>
                 </div>
-                <div class="custom-carousel__team-item">
-                  <img src="./assets/team-logos/guadalajara.png">
-                  <span class="custom-carousel__team-name"><a href="#">Venados</a></span>
-                  <span class="custom-carousel__team-result" style="border-radius: 0 0 0.125rem 0.125rem;">-</span>
+              </div>
+            </div>
+            <div class="custom-carousel__list-item d-flex">
+              <div class="custom-carousel__item">
+                <div class="custom-carousel__start-time text-center">18:25</div>
+                <div class="custom-carousel__teams-container">
+                  <div class="custom-carousel__team-item">
+                    <img src="./assets/team-logos/club-america.png">
+                    <span class="custom-carousel__team-name"><a href="#">Club América</a></span>
+                    <span class="custom-carousel__team-result" style="border-radius: 0.125rem 0.125rem 0 0;">-</span>
+                  </div>
+                  <div class="custom-carousel__team-item">
+                    <img src="./assets/team-logos/santos-laguna.png">
+                    <span class="custom-carousel__team-name"><a href="#">Santos Laguna</a></span>
+                    <span class="custom-carousel__team-result" style="border-radius: 0 0 0.125rem 0.125rem;">-</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="custom-carousel__list-item d-flex">
+              <div class="custom-carousel__item">
+                <div class="custom-carousel__start-time text-center">19:40</div>
+                <div class="custom-carousel__teams-container">
+                  <div class="custom-carousel__team-item">
+                    <img src="./assets/team-logos/cruz-azul.png">
+                    <span class="custom-carousel__team-name"><a href="#">Cruz Azul</a></span>
+                    <span class="custom-carousel__team-result" style="border-radius: 0.125rem 0.125rem 0 0;">-</span>
+                  </div>
+                  <div class="custom-carousel__team-item">
+                    <img src="./assets/team-logos/atletico-san-luis.png">
+                    <span class="custom-carousel__team-name"><a href="#">Atlético San Luis</a></span>
+                    <span class="custom-carousel__team-result" style="border-radius: 0 0 0.125rem 0.125rem;">-</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="custom-carousel__list-item d-flex">
+              <div class="custom-carousel__item">
+                <div class="custom-carousel__start-time text-center">20:00</div>
+                <div class="custom-carousel__teams-container">
+                  <div class="custom-carousel__team-item">
+                    <img src="./assets/team-logos/juarez.png">
+                    <span class="custom-carousel__team-name"><a href="#">Juárez</a></span>
+                    <span class="custom-carousel__team-result" style="border-radius: 0.125rem 0.125rem 0 0;">-</span>
+                  </div>
+                  <div class="custom-carousel__team-item">
+                    <img src="./assets/team-logos/mazatlan.png">
+                    <span class="custom-carousel__team-name"><a href="#">Mazatlán</a></span>
+                    <span class="custom-carousel__team-result" style="border-radius: 0 0 0.125rem 0.125rem;">-</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="custom-carousel__list-item d-flex">
-            <div class="custom-carousel__item">
-              <div class="custom-carousel__start-time text-center">17:05</div>
-              <div class="custom-carousel__teams-container">
-                <div class="custom-carousel__team-item">
-                  <img src="./assets/team-logos/toluca.png">
-                  <span class="custom-carousel__team-name"><a href="#">Alebrijes de Oaxaca</a></span>
-                  <span class="custom-carousel__team-result" style="border-radius: 0.125rem 0.125rem 0 0;">-</span>
+        </div>
+        <div class="custom-carousel__section d-flex">
+          <header class="custom-carousel__section-title">Amistosos selecciones</header>
+          <div class="custom-carousel__list d-flex">
+            <div class="custom-carousel__list-item d-flex">
+              <div class="custom-carousel__item">
+                <div class="custom-carousel__start-time text-center">17:05</div>
+                <div class="custom-carousel__teams-container">
+                  <div class="custom-carousel__team-item">
+                    <img src="./assets/team-logos/toluca.png">
+                    <span class="custom-carousel__team-name"><a href="#">Alebrijes de Oaxaca</a></span>
+                    <span class="custom-carousel__team-result" style="border-radius: 0.125rem 0.125rem 0 0;">-</span>
+                  </div>
+                  <div class="custom-carousel__team-item">
+                    <img src="./assets/team-logos/guadalajara.png">
+                    <span class="custom-carousel__team-name"><a href="#">Venados</a></span>
+                    <span class="custom-carousel__team-result" style="border-radius: 0 0 0.125rem 0.125rem;">-</span>
+                  </div>
                 </div>
-                <div class="custom-carousel__team-item">
-                  <img src="./assets/team-logos/guadalajara.png">
-                  <span class="custom-carousel__team-name"><a href="#">Venados</a></span>
-                  <span class="custom-carousel__team-result" style="border-radius: 0 0 0.125rem 0.125rem;">-</span>
+              </div>
+            </div>
+            <div class="custom-carousel__list-item d-flex">
+              <div class="custom-carousel__item">
+                <div class="custom-carousel__start-time text-center">18:25</div>
+                <div class="custom-carousel__teams-container">
+                  <div class="custom-carousel__team-item">
+                    <img src="./assets/team-logos/club-america.png">
+                    <span class="custom-carousel__team-name"><a href="#">Club América</a></span>
+                    <span class="custom-carousel__team-result" style="border-radius: 0.125rem 0.125rem 0 0;">-</span>
+                  </div>
+                  <div class="custom-carousel__team-item">
+                    <img src="./assets/team-logos/santos-laguna.png">
+                    <span class="custom-carousel__team-name"><a href="#">Santos Laguna</a></span>
+                    <span class="custom-carousel__team-result" style="border-radius: 0 0 0.125rem 0.125rem;">-</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="custom-carousel__list-item d-flex">
-            <div class="custom-carousel__item">
-              <div class="custom-carousel__start-time text-center">17:05</div>
-              <div class="custom-carousel__teams-container">
-                <div class="custom-carousel__team-item">
-                  <img src="./assets/team-logos/toluca.png">
-                  <span class="custom-carousel__team-name"><a href="#">Alebrijes de Oaxaca</a></span>
-                  <span class="custom-carousel__team-result" style="border-radius: 0.125rem 0.125rem 0 0;">-</span>
+        </div>
+        <div class="custom-carousel__section d-flex">
+          <header class="custom-carousel__section-title">Fase de Clasificación al Mundial, Sudamérica</header>
+          <div class="custom-carousel__list d-flex">
+            <div class="custom-carousel__list-item d-flex">
+              <div class="custom-carousel__item">
+                <div class="custom-carousel__start-time text-center">17:05</div>
+                <div class="custom-carousel__teams-container">
+                  <div class="custom-carousel__team-item">
+                    <img src="./assets/team-logos/toluca.png">
+                    <span class="custom-carousel__team-name"><a href="#">Alebrijes de Oaxaca</a></span>
+                    <span class="custom-carousel__team-result" style="border-radius: 0.125rem 0.125rem 0 0;">-</span>
+                  </div>
+                  <div class="custom-carousel__team-item">
+                    <img src="./assets/team-logos/guadalajara.png">
+                    <span class="custom-carousel__team-name"><a href="#">Venados</a></span>
+                    <span class="custom-carousel__team-result" style="border-radius: 0 0 0.125rem 0.125rem;">-</span>
+                  </div>
                 </div>
-                <div class="custom-carousel__team-item">
-                  <img src="./assets/team-logos/guadalajara.png">
-                  <span class="custom-carousel__team-name"><a href="#">Venados</a></span>
-                  <span class="custom-carousel__team-result" style="border-radius: 0 0 0.125rem 0.125rem;">-</span>
+              </div>
+            </div>
+            <div class="custom-carousel__list-item d-flex">
+              <div class="custom-carousel__item">
+                <div class="custom-carousel__start-time text-center">18:25</div>
+                <div class="custom-carousel__teams-container">
+                  <div class="custom-carousel__team-item">
+                    <img src="./assets/team-logos/club-america.png">
+                    <span class="custom-carousel__team-name"><a href="#">Club América</a></span>
+                    <span class="custom-carousel__team-result" style="border-radius: 0.125rem 0.125rem 0 0;">-</span>
+                  </div>
+                  <div class="custom-carousel__team-item">
+                    <img src="./assets/team-logos/santos-laguna.png">
+                    <span class="custom-carousel__team-name"><a href="#">Santos Laguna</a></span>
+                    <span class="custom-carousel__team-result" style="border-radius: 0 0 0.125rem 0.125rem;">-</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="custom-carousel__list-item d-flex">
-            <div class="custom-carousel__item">
-              <div class="custom-carousel__start-time text-center">17:05</div>
-              <div class="custom-carousel__teams-container">
-                <div class="custom-carousel__team-item">
-                  <img src="./assets/team-logos/toluca.png">
-                  <span class="custom-carousel__team-name"><a href="#">Alebrijes de Oaxaca</a></span>
-                  <span class="custom-carousel__team-result" style="border-radius: 0.125rem 0.125rem 0 0;">-</span>
+        </div>
+        <div class="custom-carousel__section d-flex">
+          <header class="custom-carousel__section-title">US Open Femenino</header>
+          <div class="custom-carousel__list d-flex">
+            <div class="custom-carousel__list-item d-flex">
+              <div class="custom-carousel__item">
+                <div class="custom-carousel__start-time text-center">17:05</div>
+                <div class="custom-carousel__teams-container">
+                  <div class="custom-carousel__team-item">
+                    <img src="./assets/team-logos/toluca.png">
+                    <span class="custom-carousel__team-name"><a href="#">Alebrijes de Oaxaca</a></span>
+                    <span class="custom-carousel__team-result" style="border-radius: 0.125rem 0.125rem 0 0;">-</span>
+                  </div>
+                  <div class="custom-carousel__team-item">
+                    <img src="./assets/team-logos/guadalajara.png">
+                    <span class="custom-carousel__team-name"><a href="#">Venados</a></span>
+                    <span class="custom-carousel__team-result" style="border-radius: 0 0 0.125rem 0.125rem;">-</span>
+                  </div>
                 </div>
-                <div class="custom-carousel__team-item">
-                  <img src="./assets/team-logos/guadalajara.png">
-                  <span class="custom-carousel__team-name"><a href="#">Venados</a></span>
-                  <span class="custom-carousel__team-result" style="border-radius: 0 0 0.125rem 0.125rem;">-</span>
+              </div>
+            </div>
+            <div class="custom-carousel__list-item d-flex">
+              <div class="custom-carousel__item">
+                <div class="custom-carousel__start-time text-center">18:25</div>
+                <div class="custom-carousel__teams-container">
+                  <div class="custom-carousel__team-item">
+                    <img src="./assets/team-logos/club-america.png">
+                    <span class="custom-carousel__team-name"><a href="#">Club América</a></span>
+                    <span class="custom-carousel__team-result" style="border-radius: 0.125rem 0.125rem 0 0;">-</span>
+                  </div>
+                  <div class="custom-carousel__team-item">
+                    <img src="./assets/team-logos/santos-laguna.png">
+                    <span class="custom-carousel__team-name"><a href="#">Santos Laguna</a></span>
+                    <span class="custom-carousel__team-result" style="border-radius: 0 0 0.125rem 0.125rem;">-</span>
+                  </div>
                 </div>
               </div>
             </div>

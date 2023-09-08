@@ -1,16 +1,21 @@
+:root {
+  --red-clr: #CC0000;
+  --dark-red-clr: #910000;
+}
+
 /* Carousel section */
 .matches-section {
   --background-color: #F7F7F7;
   --border-color: #DFDFDF;
-  position: relative;
-  margin: 2rem;
   background-color: #F7F7F7;
-  box-shadow: 0 2px 0px 2px rgb(0 0 0 / 0.05);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 4px 2px rgb(0 0 0 / 0.05);
 }
 
 .custom-carousel {
-  padding: 0.5rem;
+  position: relative;
   overflow-x: scroll;
+  scroll-behavior: smooth;
   border-left: 1px solid var(--border-color);
 }
 
@@ -18,6 +23,7 @@
   --text-color: #0072D8;
   --text-color-hover: #68A5DC;
   position: absolute;
+  top: 0.25rem;
   right: 0px;
   display: flex;
   align-items: center;
@@ -28,6 +34,16 @@
   color: var(--text-color);
   text-decoration: none;
   cursor: pointer;
+  z-index: 1;
+}
+
+.custom-carousel__show-more::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--background-color);
+  box-shadow: 0 0 20px 0 var(--background-color);
+  z-index: -1;
 }
 
 .custom-carousel__show-more svg {
@@ -48,16 +64,16 @@
 }
 
 .custom-carousel::-webkit-scrollbar-track {
-  background: var(--background-color);
+  background-color: var(--border-color);
 }
 
 .custom-carousel::-webkit-scrollbar-thumb {
-  background: #CC0000;
+  background: var(--red-clr);
   border-radius: 0.25rem;
 }
 
 .custom-carousel::-webkit-scrollbar-thumb:hover {
-  background: #910000;
+  background: var(--dark-red-clr);
   cursor: pointer
 }
 
@@ -76,7 +92,7 @@
 }
 
 .custom-carousel__left-btn {
-  left: 6rem;
+  left: 0;
 }
 
 .custom-carousel__right-btn {
@@ -101,6 +117,8 @@
   flex-direction: column;
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
+  padding: 0.5rem;
+  /* padding-right: 0.5rem; */
 }
 
 .custom-carousel__section:first-of-type {
@@ -172,4 +190,10 @@
   font-weight: bold;
   padding: 0.25rem 0.75rem;
   border: 1px solid var(--border-color);
+}
+
+@media screen and (min-width: 576px) {
+  .matches-section__form {
+    width: 6rem;
+  }
 }
