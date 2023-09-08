@@ -1,11 +1,114 @@
-.custom-carousel {
+/* Carousel section */
+.matches-section {
+  --background-color: #F7F7F7;
+  --border-color: #DFDFDF;
+  position: relative;
+  margin: 2rem;
   background-color: #F7F7F7;
+  box-shadow: 0 2px 0px 2px rgb(0 0 0 / 0.05);
+}
+
+.custom-carousel {
+  padding: 0.5rem;
+  overflow-x: scroll;
+  border-left: 1px solid var(--border-color);
+}
+
+.custom-carousel__show-more {
+  --text-color: #0072D8;
+  --text-color-hover: #68A5DC;
+  position: absolute;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.custom-carousel__show-more svg {
+  fill: var(--text-color);
+  margin-left: 0.25rem;
+}
+
+.custom-carousel__show-more:hover {
+  color: var(--text-color-hover)
+}
+
+.custom-carousel__show-more:hover svg {
+  fill: var(--text-color-hover);
+}
+
+.custom-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.custom-carousel::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+.custom-carousel::-webkit-scrollbar-thumb {
+  background: #CC0000;
+  border-radius: 0.25rem;
+}
+
+.custom-carousel::-webkit-scrollbar-thumb:hover {
+  background: #910000;
+  cursor: pointer
+}
+
+.custom-carousel__controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0.625rem;
+  background-color: #CCCCCC;
+  border: none;
+  outline: none;
+  transition: background-color 200ms ease-in-out;
+}
+
+.custom-carousel__left-btn {
+  left: 6rem;
+}
+
+.custom-carousel__right-btn {
+  right: 0;
+}
+
+.custom-carousel__controls:hover,
+.custom-carousel__controls:focus {
+  background-color: #919191;
+}
+
+.custom-carousel__left-arrow-svg {
+  transform: rotateY(180deg);
+}
+
+.custom-carousel__left-arrow-svg,
+.custom-carousel__right-arrow-svg {
+  fill: #FFFFFF;
 }
 
 .custom-carousel__section {
   flex-direction: column;
-  border-left: 1px solid #DFDFDF;
-  border-right: 1px solid #DFDFDF;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}
+
+.custom-carousel__section:first-of-type {
+  border-left: none;
+}
+
+.custom-carousel__section:last-of-type {
+  border-right: none;
 }
 
 .custom-carousel__section-title {
@@ -22,7 +125,7 @@
 .custom-carousel__list-item {
   padding: 0.25rem;
   background-color: #FFFFFF;
-  border: 1px solid #DFDFDF;
+  border: 1px solid var(--border-color);
   border-radius: 0.25rem;
 }
 
@@ -68,5 +171,5 @@
   margin-left: auto;
   font-weight: bold;
   padding: 0.25rem 0.75rem;
-  border: 1px solid #ECECEC;
+  border: 1px solid var(--border-color);
 }

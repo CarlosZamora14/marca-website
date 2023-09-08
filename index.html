@@ -32,11 +32,43 @@
     <img src="./assets/team-logos/toluca.png">
   </section>
 
-  <section>
-    <div>
-      Resultados
+  <section class="d-flex matches-section">
+    <div class="d-flex flex-column justify-content-center align-items-center p-2" style="width: 6rem;">
+      Resultados:
+      <select class="form-select form-select-sm">
+        <option class="fw-bold">Todos</option>
+        <option class="fw-bold">Fútbol</option>
+        <option>Clasificación Eurocopa</option>
+        <option>Liga de Expansión MX</option>
+        <option>Amistosos selecciones</option>
+        <option>Fase de Clasificación al Mundial, Sudamérica</option>
+        <option>Fútbol Americano</option>
+        <option>Fútbol Americano</option>
+        <option class="fw-bold">NFL</option>
+        <option class="fw-bold">Tenis</option>
+        <option>US Open Femenino</option>
+      </select>
     </div>
     <div class="custom-carousel">
+      <button class="custom-carousel__left-btn custom-carousel__controls">
+        <svg role="img" aria-hidden="true" focusable="false" class="custom-carousel__left-arrow-svg"
+          xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
+          <path fill-rule="evenodd" d="M0 8.946L3.91 5 0 1.054 1.045 0 6 5l-4.955 5z"></path>
+        </svg>
+      </button>
+      <a href="#" class="custom-carousel__show-more">
+        <span>Ver todo</span>
+        <svg role="img" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="6" height="10"
+          viewBox="0 0 6 10">
+          <path fill-rule="evenodd" d="M0 8.946L3.91 5 0 1.054 1.045 0 6 5l-4.955 5z"></path>
+        </svg>
+      </a>
+      <button class="custom-carousel__right-btn custom-carousel__controls">
+        <svg role="img" aria-hidden="true" focusable="false" class="custom-carousel__right-arrow-svg"
+          xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
+          <path fill-rule="evenodd" d="M0 8.946L3.91 5 0 1.054 1.045 0 6 5l-4.955 5z"></path>
+        </svg>
+      </button>
       <div class="custom-carousel__section d-flex">
         <header class="custom-carousel__section-title">Liga de expansión MX</header>
         <div class="custom-carousel__list d-flex">
