@@ -1,6 +1,7 @@
 :root {
   --red-clr: #CC0000;
   --dark-red-clr: #910000;
+  --black-color: #1F1F1F;
 }
 
 /* Carousel section */
@@ -40,9 +41,8 @@
 .custom-carousel__show-more::before {
   content: '';
   position: absolute;
-  inset: 0;
-  background-color: var(--background-color);
-  box-shadow: 0 0 20px 0 var(--background-color);
+  inset: 0 -3px;
+  background-image: radial-gradient(circle at center, var(--background-color) 75%, transparent);
   z-index: -1;
 }
 
@@ -118,7 +118,6 @@
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   padding: 0.5rem;
-  /* padding-right: 0.5rem; */
 }
 
 .custom-carousel__section:first-of-type {
@@ -192,8 +191,80 @@
   border: 1px solid var(--border-color);
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 36rem) {
   .matches-section__form {
     width: 6rem;
+  }
+}
+
+/* Footer section */
+.footer__navbar {
+  --white-clr: #F7F7F7;
+  ;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  gap: 1rem;
+}
+
+.footer__navbar-link {
+  text-decoration: none;
+  color: var(--white-clr);
+}
+
+.footer__navbar-list a:hover {
+  color: var(--red-clr);
+  text-decoration: underline;
+}
+
+.footer__about-list li {
+  margin-right: 0.5rem;
+}
+
+.footer__about-list a {
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+.footer__about-list a:hover {
+  text-decoration: underline;
+}
+
+.footer__about-list li {
+  margin-right: 0.5rem;
+}
+
+.footer__socials-list {
+  gap: 1rem;
+}
+
+.footer__socials-icons a {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.footer__socials-icons:nth-of-type(1) a {
+  background-color: #3B5998;
+}
+
+.footer__socials-icons:nth-of-type(2) a {
+  background-color: #55ACEE;
+}
+
+.footer__socials-icons:nth-of-type(3) a {
+  background-color: #D96D00;
+}
+
+@media screen and (min-width: 23.5rem) {
+  .footer__navbar {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 36rem) {
+  .footer__navbar {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
