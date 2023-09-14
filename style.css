@@ -529,3 +529,8 @@ color: #c00;
   font-size: 13px;
   text-decoration: none;
 }
+
+.links-header{
+  font-size: 13px;
+  font-weight: bold;
+}
