@@ -4,6 +4,14 @@
   --black-color: #1F1F1F;
 }
 
+body,
+input,
+button,
+ul,
+ol {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
 /* Carousel section */
 .matches-section {
   --background-color: #F7F7F7;
@@ -11,6 +19,11 @@
   background-color: #F7F7F7;
   border: 1px solid var(--border-color);
   box-shadow: 0 2px 4px 2px rgb(0 0 0 / 0.05);
+}
+
+.custom-carousel__container {
+  position: relative;
+  overflow: hidden;
 }
 
 .custom-carousel {
@@ -89,6 +102,7 @@
   border: none;
   outline: none;
   transition: background-color 200ms ease-in-out;
+  z-index: 2;
 }
 
 .custom-carousel__left-btn {
@@ -226,6 +240,7 @@
 /* Custom card */
 .custom-card {
   background-color: #F5F7FA;
+  font-family: 'Barlow Condensed', Arial, Helvetica, sans-serif;
 }
 
 .custom-card__img {
@@ -247,11 +262,15 @@
 }
 
 .custom-card__headline {
+  word-break: break-word;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: bold;
   font-size: 1rem;
   margin: 0;
 }
 
 .custom-card__author {
+  word-break: break-word;
   letter-spacing: 0;
   font-weight: 600;
   text-transform: uppercase;
@@ -296,6 +315,42 @@
 
 .custom-card--small .custom-card__img {
   width: 35%;
+}
+
+@media screen and (min-width: 36rem) {
+  .custom-card__category {
+    font-size: 0.9325rem;
+  }
+
+  .custom-card__headline {
+    font-size: 1.125rem;
+  }
+
+  .custom-card__author {
+    font-size: 0.8125rem;
+  }
+
+  .custom-card--big .custom-card__headline {
+    font-size: 1.375rem;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .custom-card__category {
+    font-size: 1rem;
+  }
+
+  .custom-card__headline {
+    font-size: 1.25rem;
+  }
+
+  .custom-card__author {
+    font-size: 0.875rem;
+  }
+
+  .custom-card--big .custom-card__headline {
+    font-size: 1.5rem;
+  }
 }
 
 /* Grid */
@@ -360,11 +415,13 @@
   grid-template-columns: 1fr;
   text-align: center;
   gap: 1rem;
+  font-size: 0.875rem;
 }
 
 .footer__navbar-link {
   text-decoration: none;
   color: var(--white-clr);
+  font-size: 0.8125rem;
 }
 
 .footer__navbar-list a:hover {
@@ -372,8 +429,13 @@
   text-decoration: underline;
 }
 
+.footer__about-container {
+  font-size: 0.875rem;
+}
+
 .footer__about-list {
   flex-direction: column;
+  font-size: 0.8125rem;
 }
 
 .footer__about-list li {
@@ -394,13 +456,13 @@
 }
 
 .footer__socials-list {
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 .footer__socials-icons a {
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
 }
 
 .footer__socials-icons:nth-of-type(1) a {
@@ -424,12 +486,80 @@
   .footer__about-list {
     flex-flow: row wrap;
   }
+
+  .footer__socials-list {
+    gap: 0.8125rem;
+  }
+
+  .footer__socials-icons a {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 @media screen and (min-width: 36rem) {
   .footer__navbar {
     grid-template-columns: repeat(4, 1fr);
+    font-size: 0.9325rem;
   }
+
+  .footer__navbar-link {
+    font-size: 0.875rem;
+  }
+
+  .footer__about-container {
+    font-size: 0.9325rem;
+  }
+
+  .footer__about-list {
+    font-size: 0.875rem;
+  }
+
+  .footer__socials-list {
+    gap: 0.875rem;
+  }
+
+  .footer__socials-icons a {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .footer__navbar {
+    font-size: 1rem;
+  }
+
+  .footer__navbar-link {
+    font-size: 0.9325rem;
+  }
+
+  .footer__about-container {
+    font-size: 1rem;
+  }
+
+  .footer__about-list {
+    font-size: 0.9325rem;
+  }
+
+  .footer__socials-list {
+    gap: 1rem;
+  }
+
+  .footer__socials-icons a {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Navbar */
+.custom-navbar {
+  position: relative;
+  flex-grow: 1;
+}
+
+.nav-item.dropdown {
+  position: static;
 }
 
 .dropdown:hover>.dropdown-menu {
@@ -487,44 +617,47 @@
 }
 
 .lista {
-  width: 80rem;
+  position: absolute;
+  left: 0;
+  right: 0;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-size: smaller;
   background-color: rgba(0, 0, 0, 0.919);
   border: none;
 }
 
-.opcion-lista{
+.opcion-lista {
   text-decoration: none;
   padding: 0.5rem 1rem 0.5rem 1rem;
   font-weight: bold;
 }
 
-.encabezado{
+.encabezado {
   color: rgb(112, 116, 121);
   font-size: 18px;
   margin-bottom: 5px;
 }
 
-.titulo{
+.titulo {
   color: white;
   font-size: 15px;
   cursor: pointer;
 }
 
-.elemento{
+.elemento {
   color: rgb(150, 148, 148);
   font-size: 13px;
 }
 
-.elemento:hover{
-color: #c00;
-}
-.titulo:hover{
+.elemento:hover {
   color: #c00;
-  }
-  
-.separador-elemento{
+}
+
+.titulo:hover {
+  color: #c00;
+}
+
+.separador-elemento {
   color: rgb(150, 148, 148);
   font-size: 13px;
   text-decoration: none;
