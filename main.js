@@ -8,10 +8,6 @@ const link = document.querySelector('.custom-carousel__show-more');
 function updateControls(currScrollLeft) {
   currScrollLeft === 0 ? leftBtn.classList.add('d-none') : leftBtn.classList.remove('d-none');
   Math.round(currScrollLeft + carousel.clientWidth) >= carouselWidth ? rightBtn.classList.add('d-none') : rightBtn.classList.remove('d-none');
-
-  leftBtn.style.left = `${currScrollLeft}px`;
-  rightBtn.style.right = `-${currScrollLeft}px`;
-  link.style.right = `-${currScrollLeft}px`;
 }
 
 function clampScrollLeft(scrollLeft) {
