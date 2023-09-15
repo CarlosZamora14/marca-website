@@ -20,36 +20,95 @@
   <!-- Header blanco con logo -->
   <div class="container header-blanco">
     <div class="links-header">
-      <div class="row">
-        <div class="col d-flex align-items-center">
+      <div class="row p-1 align-items-center">
+        <!-- Botones de la izquierda -->
+        <div class="col-lg-4 d-none d-lg-flex">
           <a class="navbar-brand elemento" href="#">
-            <img src="/images/radioMarca.png" alt="Logo" width="34" height="34"
+            <img src="/assets/images/radioMarca.png" alt="RadioMarca" width="34" height="34"
               class="d-inline-block align-text-center">
             Radio Marca
           </a>
-          <hr style="margin: 0 1% 0 1%;  border: 0.8px solid black; height: 80%;">
+          <hr style="margin: 0 1% 0 1%;">
           <a class="navbar-brand elemento" href="#">
-            <img src="/images/cuidatePlus.jpeg" alt="Logo" width="34" height="34" style="border-radius: 50%;"
+            <img src="/assets/images/cuidatePlus.jpeg" alt="Cuidate+" width="34" height="34" style="border-radius: 50%;"
               class="d-inline-block align-text-center">
             CuídatePlus
           </a>
-          <hr style="margin: 0 1% 0 1%;  border: 0.8px solid black; height: 80%;">
+          <hr style="margin: 0 1% 0 1%;">
           <a class="navbar-brand elemento" href="#">
-            <img src="/images/trending.png" alt="Logo" width="35" height="34" class="d-inline-block align-text-center">
+            <img src="/assets/images/trending.png" alt="Trending" width="35" height="34"
+              class="d-inline-block align-text-center">
             Lo + trending
           </a>
-        </div class="col-6 justify-content-center">
-        <div style="width: 150px;">
+        </div>
+        <!-- Logo -->
+        <div class="col-lg-4 d-flex justify-content-center">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="Bootstrap" width="100%" height="44">
+            <img src="/assets/images/logo.png" alt="Logo" width="100%" height="44">
           </a>
         </div>
+
+        <div class="col-lg-4 d-flex justify-content-end d-none d-lg-flex">
+          <div class="btn-group" role="group">
+            <!-- Botón de Idiomas -->
+            <div class="dropdown">
+              <button class="btn btn-outline-dark dropdown-toggle mr-2" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="/assets/images/bandera-mexico.png" alt="MX" width="20" height="20" class="mr-2">MX
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="idiomasDropdown">
+                <div class="row">
+                  <div class="col-12">
+                    <li style="font-size: 12px;">Ediciones:</li>
+                  </div>
+                  <div class="col-12 idioma">
+                    <li><img src="/assets/images/bandera-espana.png" alt="ES" width="20" height="20" class="mr-2" style="margin-right: 10px;">ES (España)</li>
+                  </div>
+                  <div class="col-12 idioma">
+                    <li><img src="/assets/images/bandera-mundo.png" alt="ES" width="20" height="20" class="mr-2" style="margin-right: 10px;">EN (English)</li>
+                  </div>
+                  <div class="col-12 idioma">
+                    <li><img src="/assets/images/bandera-mexico.png" alt="MX" width="20" height="20" class="mr-2" style="margin-right: 10px;">MX (México)</li>
+                  </div>
+                  <div class="col-12 idioma">
+                    <li><img src="/assets/images/bandera-usa.png" alt="EN" width="20" height="20" class="mr-2" style="margin-right: 10px;">US (USA)</li>
+                  </div>
+                  <div class="col-12">
+                    <li style="font-size: 13px; margin-bottom: 6px;">Escoge tu edición de Marca.com favorita:</li>
+                  </div>
+                  <div class="col-12">
+                      <li style="font-size: 10px; margin-bottom: 10px;">Siempre que entres en Marca.com se cargará esta edición</li>
+                  </div>
+                  <div class="col-6 selector-idioma">
+                    <input type="radio">ES (España)</radio>
+                  </div>
+                  <div class="col-6 selector-idioma">
+                    <input type="radio">EN (English)</radio>
+                  </div>
+                  <div class="col-6 selector-idioma">
+                    <input type="radio">ES (México)</radio>
+                  </div>
+                  <div class="col-6 selector-idioma">
+                    <input type="radio">US (USA)</radio>
+                  </div>
+                </div>
+              </ul>
+            </div>
+            <div style="width: 10px;"></div>
+            <!-- Botón de Iniciar Sesión -->
+            <a class="btn btn-outline-dark iniciar-sesion" href="#" style="border-radius: 10px 10px 10px 10px;">Iniciar Sesión</a>
+          </div>
+        </div>
+
+
+
       </div>
     </div>
   </div>
 
+
   <!-- Navbar roja con botones desplegables  -->
-  <nav class=" navbar navbar-expand-lg p-0" data-bs-theme="dark" style="background-color: #c00;">
+  <nav class=" navbar navbar-expand-lg p-0" data-bs-theme="dark" style="background-color: #c00; position:relative;">
     <div class="container p-0">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,7 +124,7 @@
             <ul class="dropdown-menu multi-column lista">
               <div class="container-fluid">
                 <div class="row p-0">
-                  <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="col-lg-3 col-sm-12 col-xs-12">
                     <li>
                       <div class="opcion-lista encabezado" href="#">México</div>
                     </li>
@@ -75,9 +134,10 @@
                     <li><a class="opcion-lista elemento" href="#">Calendario - Apertura</a></li>
                     <li><a class="opcion-lista elemento" href="#">Posiciones - Apertura</a></li>
                     <li><a class="opcion-lista elemento" href="#">Calendario - Clausura</a></li>
-                    <li><a class="opcion-lista elemento" href="#">Posiciones - Clausura</a><a
-                        class="separador-elemento">/</a><a class="opcion-lista elemento">Resultados</a></li>
-
+                    <li><a class="opcion-lista elemento" href="#">Posiciones - Clausura</a>
+                      <a class="separador-elemento">/</a>
+                      <a class="opcion-lista elemento">Resultados</a>
+                    </li>
                     <li>
                       <div class="opcion-lista titulo" href="#">Liga de Expansión MX</div>
                     </li>
@@ -104,7 +164,7 @@
 
 
                   </div>
-                  <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="col-lg-3 col-sm-12 col-xs-12">
                     <li>
                       <div class="opcion-lista encabezado" href="#">América</div>
                     </li>
@@ -131,7 +191,7 @@
                     <li><a class="opcion-lista elemento" href="#">Calendario</a><a class="separador-elemento">/</a><a
                         class="opcion-lista elemento">Posiciones</a>
                   </div>
-                  <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="col-lg-3 col-sm-12 col-xs-12">
                     <li>
                       <div class="opcion-lista encabezado" href="#">Europa</div>
                     </li>
@@ -189,7 +249,7 @@
                     </li>
 
                   </div>
-                  <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="col-lg-3 col-sm-12 col-xs-12">
                     <li>
                       <div class="opcion-lista encabezado" href="#">Y además</div>
                     </li>
@@ -312,6 +372,7 @@
           <li class="nav-item">
             <a class="ni4" style="padding-left: 1rem;" href="#">Más +</a>
           </li>
+
         </ul>
       </div>
     </div>

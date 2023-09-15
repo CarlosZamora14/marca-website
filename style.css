@@ -647,6 +647,7 @@ ol {
 .elemento {
   color: rgb(150, 148, 148);
   font-size: 13px;
+  word-break:normal;
 }
 
 .elemento:hover {
@@ -666,4 +667,25 @@ ol {
 .links-header{
   font-size: 13px;
   font-weight: bold;
+}
+.iniciar-sesion{
+  color: #c00;
+}
+.iniciar-sesion:hover{
+  color:  white;
+  background-color: black;
+}
+
+.idioma{
+  font-size: 12px;
+  padding: 10%;
+}
+
+.idioma:hover{
+  background-color: rgb(218, 217, 217);
+  cursor: pointer;
+}
+
+.selector-idioma{
+font-size: 12px;
 }
