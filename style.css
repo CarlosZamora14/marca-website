@@ -236,7 +236,7 @@ ol {
   pointer-events: none;
 }
 
-.custom-carousel__last-section .custom-carousel__list a > :first-child {
+.custom-carousel__last-section .custom-carousel__list a> :first-child {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -769,10 +769,17 @@ ol {
 .elemento {
   color: rgb(150, 148, 148);
   font-size: 13px;
-  word-break:normal;
+  word-break: normal;
 }
 
-.elemento:hover {
+.navbar-brand.elemento {
+  font-size: 0.75rem;
+  padding-inline: 0.5rem;
+  color: #221F1F;
+  border-left: 1px solid #E2E2E2;
+}
+
+a.elemento:hover {
   color: #c00;
 }
 
@@ -790,24 +797,37 @@ ol {
   font-size: 13px;
   font-weight: bold;
 }
-.iniciar-sesion{
+
+.iniciar-sesion {
   color: #c00;
 }
-.iniciar-sesion:hover{
-  color:  white;
+
+.iniciar-sesion:hover {
+  color: white;
   background-color: black;
 }
 
-.idioma{
+.idioma {
   font-size: 12px;
   padding: 10%;
-}
-
-.idioma:hover{
-  background-color: rgb(218, 217, 217);
+  font-weight: 400;
+  color: #636363;
+  border-bottom: 1px solid #E2E2E2;
   cursor: pointer;
 }
 
-.selector-idioma{
-font-size: 12px;
+.idioma:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.idioma.selected,
+.idioma.selected:hover {
+  background-color: #0072D8;
+  color: white;
+}
+
+.selector-idioma {
+  font-size: 12px;
+  font-weight: 400;
+  color: #636363;
 }

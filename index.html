@@ -20,10 +20,10 @@
   <!-- Header blanco con logo -->
   <div class="container header-blanco">
     <div class="links-header">
-      <div class="row p-1 align-items-center">
+      <div class="row py-1 align-items-center">
         <!-- Botones de la izquierda -->
-        <div class="col-lg-4 d-none d-lg-flex">
-          <a class="navbar-brand elemento" href="#">
+        <div class="col-lg-4 d-none d-lg-flex p-0">
+          <a class="navbar-brand elemento" href="#" style="border: none; padding-left: 0">
             <img src="./assets/images/radioMarca.png" alt="RadioMarca" width="34" height="34"
               class="d-inline-block align-text-center">
             Radio Marca
@@ -48,60 +48,62 @@
           </a>
         </div>
 
-        <div class="col-lg-4 d-flex justify-content-end d-none d-lg-flex">
+        <div class="col-lg-4 d-flex justify-content-end d-none d-lg-flex p-0">
           <div class="btn-group" role="group">
             <!-- Botón de Idiomas -->
             <div class="dropdown">
               <button class="btn btn-outline-dark dropdown-toggle mr-2" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <img src="./assets/images/bandera-mexico.png" alt="MX" width="20" height="20" class="me-2">MX
+                aria-expanded="false"
+                style="font-size: 0.8rem; display: flex; align-items: center; gap: 0.125rem; border-color: #E2E2E2;">
+                <img src="./assets/images/bandera-mexico.png" alt="MX" width="24" class="me-2">MX
               </button>
-              <ul class="dropdown-menu" aria-labelledby="idiomasDropdown">
+              <ul class="dropdown-menu px-2" aria-labelledby="idiomasDropdown" style="min-width: 14rem; overflow: hidden;">
                 <div class="row">
-                  <div class="col-12">
+                  <div class="col-12 pb-1" style="border-bottom: 1px solid #E2E2E2;">
                     <li style="font-size: 12px;">Ediciones:</li>
                   </div>
-                  <div class="col-12 idioma">
-                    <li><img src="./assets/images/bandera-espana.png" alt="ES" width="20" height="20" class="mr-2"
+                  <div class="col-12 idioma p-3">
+                    <li><img src="./assets/images/bandera-espana.png" alt="ES" width="24" class="mr-2"
                         style="margin-right: 10px;">ES (España)</li>
                   </div>
-                  <div class="col-12 idioma">
-                    <li><img src="./assets/images/bandera-mundo.png" alt="ES" width="20" height="20" class="mr-2"
+                  <div class="col-12 idioma p-3">
+                    <li><img src="./assets/images/bandera-mundo.png" alt="ES" width="24" class="mr-2"
                         style="margin-right: 10px;">EN (English)</li>
                   </div>
-                  <div class="col-12 idioma">
-                    <li><img src="./assets/images/bandera-mexico.png" alt="MX" width="20" height="20" class="mr-2"
+                  <div class="col-12 idioma p-3 selected">
+                    <li><img src="./assets/images/bandera-mexico.png" alt="MX" width="24" class="mr-2"
                         style="margin-right: 10px;">MX (México)</li>
                   </div>
-                  <div class="col-12 idioma">
-                    <li><img src="./assets/images/bandera-usa.png" alt="EN" width="20" height="20" class="mr-2"
+                  <div class="col-12 idioma p-3">
+                    <li><img src="./assets/images/bandera-usa.png" alt="EN" width="24" class="mr-2"
                         style="margin-right: 10px;">US (USA)</li>
                   </div>
                   <div class="col-12">
                     <li style="font-size: 13px; margin-bottom: 6px;">Escoge tu edición de Marca.com favorita:</li>
                   </div>
                   <div class="col-12">
-                    <li style="font-size: 10px; margin-bottom: 10px;">Siempre que entres en Marca.com se cargará esta
+                    <li style="font-size: 10px; margin-bottom: 10px; font-weight: 400;">Siempre que entres en Marca.com se cargará esta
                       edición</li>
                   </div>
                   <div class="col-6 selector-idioma">
-                    <input type="radio">ES (España)</radio>
+                    <input type="radio" name="language">ES (España)</radio>
                   </div>
                   <div class="col-6 selector-idioma">
-                    <input type="radio">EN (English)</radio>
+                    <input type="radio" name="language">EN (English)</radio>
                   </div>
                   <div class="col-6 selector-idioma">
-                    <input type="radio">ES (México)</radio>
+                    <input type="radio" name="language" checked>ES (México)</radio>
                   </div>
                   <div class="col-6 selector-idioma">
-                    <input type="radio">US (USA)</radio>
+                    <input type="radio" name="language">US (USA)</radio>
                   </div>
                 </div>
               </ul>
             </div>
             <div style="width: 10px;"></div>
             <!-- Botón de Iniciar Sesión -->
-            <a class="btn btn-outline-dark iniciar-sesion" href="#" style="border-radius: 10px 10px 10px 10px;">Iniciar
+            <a class="btn btn-outline-dark iniciar-sesion" href="#"
+              style="font-size: 0.8rem; border-radius: 6px; border-color: #E2E2E4;">Iniciar
               Sesión</a>
           </div>
         </div>
