@@ -684,12 +684,58 @@ ol {
   position: static;
 }
 
-.dropdown:hover>.dropdown-menu {
-  display: block;
+.navbar-item {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
-.dropdown>.dropdown-toggle:active {
-  pointer-events: none;
+@media screen and (min-width: 576px) {
+  .navbar-item {
+    padding-left: calc((100% - 540px) / 2);
+    padding-right: calc((100% - 540px) / 2);
+  }
+
+  .navbar-toggler {
+    margin-left: calc((100% - 540px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-item {
+    padding-left: calc((100% - 720px) / 2);
+    padding-right: calc((100% - 720px) / 2);
+  }
+
+  .navbar-toggler {
+    margin-left: calc((100% - 720px) / 2);
+  }
+}
+
+@media screen and (min-width: 992px) {
+
+  .navbar-item,
+  .navbar-toggler {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.dropdown:has(.nav-link[aria-expanded=true]) {
+  background-color: black;
+}
+
+@media screen and (min-width: 992px) {
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+
+  .nav-item.dropdown:has(.dropdown-menu:hover) {
+    background-color: black;
+  }
+
+  .dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+  }
 }
 
 .nav-link {
@@ -701,7 +747,7 @@ ol {
   font-size: 18px;
 }
 
-.nav-link:hover {
+.navbar-item:hover {
   background-color: black;
 }
 
@@ -742,6 +788,7 @@ ol {
   pointer-events: none;
   height: 100%;
 }
+
 .left-triangle::before {
   left: 0.75rem;
   clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
@@ -783,6 +830,7 @@ ol {
   color: white;
   font-size: 15px;
   cursor: pointer;
+  display: inline-block;
 }
 
 .elemento {
