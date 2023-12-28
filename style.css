@@ -710,7 +710,6 @@ ol {
   font-weight: 400;
   font-size: 15px;
   padding: 0.75rem 0rem 0.75rem 1rem;
-
 }
 
 .ni3:hover {
@@ -733,6 +732,26 @@ ol {
   color: rgba(255, 255, 255, 0.667);
 }
 
+.left-triangle::before,
+.right-triangle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.201);
+  width: 0.5rem;
+  pointer-events: none;
+  height: 100%;
+}
+.left-triangle::before {
+  left: 0.75rem;
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+}
+
+.right-triangle::before {
+  right: 0.5rem;
+  clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+
 .dropdown-menu {
   border-radius: 0%;
   padding: 1rem;
@@ -750,12 +769,12 @@ ol {
 
 .opcion-lista {
   text-decoration: none;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem 0rem;
   font-weight: bold;
 }
 
 .encabezado {
-  color: rgb(112, 116, 121);
+  color: #5d6d7e;
   font-size: 18px;
   margin-bottom: 5px;
 }
@@ -788,7 +807,7 @@ a.elemento:hover {
 }
 
 .separador-elemento {
-  color: rgb(150, 148, 148);
+  color: #5d6d7e;
   font-size: 13px;
   text-decoration: none;
 }

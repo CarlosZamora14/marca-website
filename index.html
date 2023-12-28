@@ -57,7 +57,8 @@
                 style="font-size: 0.8rem; display: flex; align-items: center; gap: 0.125rem; border-color: #E2E2E2;">
                 <img src="./assets/images/bandera-mexico.png" alt="MX" width="24" class="me-2">MX
               </button>
-              <ul class="dropdown-menu px-2" aria-labelledby="idiomasDropdown" style="min-width: 14rem; overflow: hidden;">
+              <ul class="dropdown-menu px-2" aria-labelledby="idiomasDropdown"
+                style="min-width: 14rem; overflow: hidden;">
                 <div class="row">
                   <div class="col-12 pb-1" style="border-bottom: 1px solid #E2E2E2;">
                     <li style="font-size: 12px;">Ediciones:</li>
@@ -82,7 +83,8 @@
                     <li style="font-size: 13px; margin-bottom: 6px;">Escoge tu edición de Marca.com favorita:</li>
                   </div>
                   <div class="col-12">
-                    <li style="font-size: 10px; margin-bottom: 10px; font-weight: 400;">Siempre que entres en Marca.com se cargará esta
+                    <li style="font-size: 10px; margin-bottom: 10px; font-weight: 400;">Siempre que entres en Marca.com
+                      se cargará esta
                       edición</li>
                   </div>
                   <div class="col-6 selector-idioma">
@@ -107,13 +109,9 @@
               Sesión</a>
           </div>
         </div>
-
-
-
       </div>
     </div>
   </div>
-
 
   <!-- Navbar roja con botones desplegables  -->
   <nav class=" navbar navbar-expand-lg p-0" data-bs-theme="dark" style="background-color: #c00; position:relative;">
@@ -132,27 +130,40 @@
             <ul class="dropdown-menu multi-column lista">
               <div class="container-fluid">
                 <div class="row p-0">
-                  <div class="col-lg-3 col-sm-12 col-xs-12">
+                  <div class="col-lg-3 col-sm-12 col-xs-12" style="padding: 0 1rem 0 0;">
                     <li>
                       <div class="opcion-lista encabezado" href="#">México</div>
                     </li>
                     <li>
                       <div class="opcion-lista titulo" href="#">Liga MX</div>
                     </li>
-                    <li><a class="opcion-lista elemento" href="#">Calendario - Apertura</a></li>
-                    <li><a class="opcion-lista elemento" href="#">Posiciones - Apertura</a></li>
-                    <li><a class="opcion-lista elemento" href="#">Calendario - Clausura</a></li>
-                    <li><a class="opcion-lista elemento" href="#">Posiciones - Clausura</a>
-                      <a class="separador-elemento">/</a>
-                      <a class="opcion-lista elemento">Resultados</a>
+                    <li>
+                      <a class="opcion-lista elemento" href="#">Calendario - Apertura</a>
+                      <span class="separador-elemento">/</span>
+                    </li>
+                    <li>
+                      <a class="opcion-lista elemento" href="#">Posiciones - Apertura</a>
+                      <span class="separador-elemento">/</span>
+                    </li>
+                    <li>
+                      <a class="opcion-lista elemento" href="#">Calendario - Clausura</a>
+                      <span class="separador-elemento">/</span>
+                    </li>
+                    <li>
+                      <a class="opcion-lista elemento" href="#">Posiciones - Clausura</a>
+                      <span class="separador-elemento">/</span>
+                      <a class="opcion-lista elemento" style="padding-left: 0;">Resultados</a>
                     </li>
                     <li>
                       <div class="opcion-lista titulo" href="#">Liga de Expansión MX</div>
                     </li>
                     <li><a class="opcion-lista elemento" href="#">Calendario - Apertura</a></li>
                     <li><a class="opcion-lista elemento" href="#">Posiciones - Apertura</a></li>
-                    <li><a class="opcion-lista elemento" href="#">Posiciones - Clausura</a><a
-                        class="separador-elemento">/</a><a class="opcion-lista elemento">Resultados</a></li>
+                    <li>
+                      <a class="opcion-lista elemento" href="#">Posiciones - Clausura</a>
+                      <span class="separador-elemento">/</span>
+                      <a class="opcion-lista elemento">Resultados</a>
+                    </li>
 
                     <li>
                       <div class="opcion-lista titulo" href="#">Concachampions</div>
@@ -172,23 +183,27 @@
 
 
                   </div>
-                  <div class="col-lg-3 col-sm-12 col-xs-12">
+                  <div class="col-lg-3 col-sm-12 col-xs-12" style="padding: 0 1rem 0 0;">
                     <li>
                       <div class="opcion-lista encabezado" href="#">América</div>
                     </li>
                     <li>
                       <div class="opcion-lista titulo" href="#">MLS</div>
                     </li>
-                    <li><a class="opcion-lista elemento" href="#">Calendario</a><a class="separador-elemento">/</a><a
-                        class="opcion-lista elemento">Posiciones</a><a class="separador-elemento">/</a><a
-                        class="opcion-lista elemento">Resultados</a></li>
-
+                    <li>
+                      <a class="opcion-lista elemento" href="#">Calendario</a>
+                      <span class="separador-elemento">/</span>
+                      <a class="opcion-lista elemento">Posiciones</a>
+                      <span class="separador-elemento">/</span>
+                      <a class="opcion-lista elemento">Resultados</a>
+                    </li>
                     <li>
                       <div class="opcion-lista titulo" href="#">Conmebol Libertadores</div>
                     </li>
-                    <li><a class="opcion-lista elemento" href="#">Calendario</a><a class="separador-elemento">/</a><a
-                        class="opcion-lista elemento">Posiciones</a>
-
+                    <li>
+                      <a class="opcion-lista elemento" href="#">Calendario</a>
+                      <span class="separador-elemento">/</span>
+                      <a class="opcion-lista elemento">Posiciones</a>
                     <li>
                       <div class="opcion-lista titulo" href="#">Concacaf Nations League</div>
                     </li>
@@ -196,35 +211,49 @@
                     <li>
                       <div class="opcion-lista titulo" href="#">Leagues Cup</div>
                     </li>
-                    <li><a class="opcion-lista elemento" href="#">Calendario</a><a class="separador-elemento">/</a><a
-                        class="opcion-lista elemento">Posiciones</a>
+                    <li>
+                      <a class="opcion-lista elemento" href="#">Calendario</a>
+                      <span class="separador-elemento">/</span>
+                      <a class="opcion-lista elemento">Posiciones</a>
                   </div>
-                  <div class="col-lg-3 col-sm-12 col-xs-12">
+                  <div class="col-lg-3 col-sm-12 col-xs-12" style="padding: 0 1rem 0 0;">
                     <li>
                       <div class="opcion-lista encabezado" href="#">Europa</div>
                     </li>
                     <li>
                       <div class="opcion-lista titulo" href="#">LaLiga EA Sports</div>
                     </li>
-                    <li><a class="opcion-lista elemento" href="#">Calendario</a><a class="separador-elemento">/</a><a
-                        class="opcion-lista elemento">Posiciones</a><a class="separador-elemento">/</a><a
-                        class="opcion-lista elemento">Resultados</a></li>
-                    <li><a class="opcion-lista elemento" href="#">Barcelona</a><a class="separador-elemento">/</a><a
-                        class="opcion-lista elemento">Real Madrid</a>
-
+                    <li>
+                      <a class="opcion-lista elemento" href="#">Calendario</a>
+                      <span class="separador-elemento">/</span>
+                      <a class="opcion-lista elemento">Posiciones</a>
+                      <span class="separador-elemento">/</span>
+                      <a class="opcion-lista elemento">Resultados</a>
+                    </li>
+                    <li>
+                      <a class="opcion-lista elemento" href="#">Barcelona</a>
+                      <span class="separador-elemento">/</span>
+                      <a class="opcion-lista elemento">Real Madrid</a>
                     <li>
                       <div class="opcion-lista titulo" href="#">Premiel League</div>
                     </li>
-                    <li><a class="opcion-lista elemento" href="#">Calendario</a><a class="separador-elemento">/</a><a
-                        class="opcion-lista elemento">Posiciones</a><a class="separador-elemento">/</a><a
-                        class="opcion-lista elemento">Resultados</a></li>
-
+                    <li>
+                      <a class="opcion-lista elemento" href="#">Calendario</a>
+                      <span class="separador-elemento">/</span>
+                      <a class="opcion-lista elemento">Posiciones</a>
+                      <span class="separador-elemento">/</span>
+                      <a class="opcion-lista elemento">Resultados</a>
+                    </li>
                     <li>
                       <div class="opcion-lista titulo" href="#">League 1</div>
                     </li>
-                    <li><a class="opcion-lista elemento" href="#">Calendario</a><a class="separador-elemento">/</a><a
-                        class="opcion-lista elemento">Posiciones</a><a class="separador-elemento">/</a><a
-                        class="opcion-lista elemento">Resultados</a></li>
+                    <li>
+                      <a class="opcion-lista elemento" href="#">Calendario</a>
+                      <span class="separador-elemento">/</span>
+                      <a class="opcion-lista elemento">Posiciones</a>
+                      <span class="separador-elemento">/</span>
+                      <a class="opcion-lista elemento">Resultados</a>
+                    </li>
 
                     <li>
                       <div class="opcion-lista titulo" href="#">Serie A</div>
@@ -241,23 +270,31 @@
                     <li>
                       <div class="opcion-lista titulo" href="#">Champions League</div>
                     </li>
-                    <li><a class="opcion-lista elemento" href="#">Calendario</a><a class="separador-elemento">/</a><a
-                        class="opcion-lista elemento">Posiciones</a><a class="separador-elemento">/</a><a
-                        class="opcion-lista elemento">Resultados</a></li>
+                    <li>
+                      <a class="opcion-lista elemento" href="#">Calendario</a>
+                      <span class="separador-elemento">/</span>
+                      <a class="opcion-lista elemento">Posiciones</a>
+                      <span class="separador-elemento">/</span>
+                      <a class="opcion-lista elemento">Resultados</a>
+                    </li>
 
                     <li>
                       <div class="opcion-lista titulo" href="#">Europa League</div>
                     </li>
-                    <li><a class="opcion-lista elemento" href="#">Calendario</a><a class="separador-elemento">/</a><a
-                        class="opcion-lista elemento">Posiciones</a><a class="separador-elemento">/</a><a
-                        class="opcion-lista elemento">Resultados</a></li>
+                    <li>
+                      <a class="opcion-lista elemento" href="#">Calendario</a>
+                      <span class="separador-elemento">/</span>
+                      <a class="opcion-lista elemento">Posiciones</a>
+                      <span class="separador-elemento">/</span>
+                      <a class="opcion-lista elemento">Resultados</a>
+                    </li>
 
                     <li>
                       <div class="opcion-lista titulo" href="#">UEFA Nations League</div>
                     </li>
 
                   </div>
-                  <div class="col-lg-3 col-sm-12 col-xs-12">
+                  <div class="col-lg-3 col-sm-12 col-xs-12" style="padding: 0 0 0 0;">
                     <li>
                       <div class="opcion-lista encabezado" href="#">Y además</div>
                     </li>
@@ -300,9 +337,15 @@
               <li>
                 <div class="opcion-lista titulo" href="#">F1</div>
               </li>
-              <li><a class="opcion-lista elemento" href="#">Calendario</a><a class="separador-elemento">/</a><a
-                  class="opcion-lista elemento">Clasificación</a><a class="separador-elemento">/</a></li>
-              <li><a class="opcion-lista elemento" href="#">Clasificación constructores</a></li>
+              <li>
+                <a class="opcion-lista elemento" href="#">Calendario</a>
+                <span class="separador-elemento">/</span>
+                <a class="opcion-lista elemento">Clasificación</a>
+                <span class="separador-elemento">/</span>
+              </li>
+              <li>
+                <a class="opcion-lista elemento" href="#">Clasificación constructores</a>
+              </li>
 
             </ul>
           </li>
@@ -316,17 +359,18 @@
             </a>
             <ul class="dropdown-menu lista">
               <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-12">
+                <div class="row p-0">
+                  <div class="col-md-12" style="padding: 0 1rem 0 0;">
                     <li>
                       <div class="opcion-lista titulo" href="#">NFL</div>
                     </li>
-                    <li><a class="opcion-lista elemento" href="#">Calendario</a>
-                      <a class="separador-elemento">/</a>
+                    <li>
+                      <a class="opcion-lista elemento" href="#">Calendario</a>
+                      <span class="separador-elemento">/</span>
                       <a class="opcion-lista elemento">Posiciones</a>
-                      <a class="separador-elemento">/</a>
+                      <span class="separador-elemento">/</span>
                       <a class="opcion-lista elemento">Resultados</a>
-                      <a class="separador-elemento">/</a>
+                      <span class="separador-elemento">/</span>
                       <a class="opcion-lista elemento">Superbowl</a>
                     </li>
                   </div>
@@ -341,8 +385,8 @@
             </a>
             <ul class="dropdown-menu lista">
               <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-12">
+                <div class="row p-0">
+                  <div class="col-md-12" style="padding: 0 1rem 0 0;">
                     <li>
                       <div class="opcion-lista titulo" href="#">Basquetbol</div>
                     </li>
@@ -350,12 +394,16 @@
                     <li>
                       <div class="opcion-lista titulo" href="#">Béisbol</div>
                     </li>
-                    <li><a class="opcion-lista elemento" href="#">Calendario</a><a class="separador-elemento">/</a><a
-                        class="opcion-lista elemento" href="#">Posiciones</a>
+                    <li>
+                      <a class="opcion-lista elemento" href="#">Calendario</a>
+                      <span class="separador-elemento">/</span>
+                      <a class="opcion-lista elemento" href="#">Posiciones</a>
                     <li>
                       <div class="opcion-lista titulo" href="#">Tenis</div>
                     </li>
-                    <li><a class="opcion-lista elemento" href="#">Abierto Meicano</a></li>
+                    <li>
+                      <a class="opcion-lista elemento" href="#">Abierto Meicano</a>
+                    </li>
                     <li>
                       <div class="opcion-lista titulo" href="#">Lucha Libre</div>
                     </li>
@@ -371,11 +419,15 @@
 
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link ni3" style="padding-right: 1rem; padding-left: 1rem;" href="#">Actualidad</a>
+          <li class="nav-item" style="position: relative;">
+            <a class="nav-link ni3 left-triangle" style="margin-left: 1.25rem; padding-right: 1rem; padding-left: 1rem;" href="#">
+              Actualidad
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link ni3" style="padding-right: 1rem; padding-left: 1rem;" href="#">Ultimas noticias</a>
+          <li class="nav-item" style="position: relative;">
+            <a class="nav-link ni3 right-triangle" style="margin-right: 1rem; padding-right: 1rem; padding-left: 1rem;" href="#">
+              Ultimas noticias
+            </a>
           </li>
           <li class="nav-item">
             <a class="ni4" style="padding-left: 1rem;" href="#">Más +</a>
@@ -412,7 +464,7 @@
   <section class="container d-flex flex-column flex-sm-row matches-section p-0 mt-4">
     <div class="matches-section__form d-flex flex-column justify-content-center align-items-center p-2">
       <span class="fw-bold" style="font-size: 0.875rem;">Resultados:</span>
-      <select class="form-select form-select-sm">
+      <select class="form-select form-select-sm" name="select-category">
         <option class="fw-bold">Todos</option>
         <option class="fw-bold">Fútbol</option>
         <option>Clasificación Eurocopa</option>
